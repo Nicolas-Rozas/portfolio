@@ -187,7 +187,7 @@ function TiltCard({
               style={{
                 display: 'inline-block',
                 backgroundColor: `${group.color}14`,
-                color: '#CBD5E1',
+                color: '#FFFFFF',
                 border: `1px solid ${group.color}30`,
                 borderRadius: '6px',
                 padding: '0.3rem 0.75rem',

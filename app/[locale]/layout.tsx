@@ -12,7 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nicolasrozas.com'),
+  metadataBase: new URL('https://www.nicolasrozas.com'),
 
   title: {
     default: 'Nicolás Rozas — Fullstack Developer',
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
     languages: {
-      es: 'https://nicolasrozas.com',
-      en: 'https://nicolasrozas.com/en',
+      es: 'https://www.nicolasrozas.com',
+      en: 'https://www.nicolasrozas.com/en',
     },
   },
 
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: 'Nicolás Rozas — Fullstack Developer',
     description:
       'Desarrollador Fullstack con más de 5 años de experiencia. React, Next.js, Node.js, React Native.',
-    url: 'https://nicolasrozas.com',
+    url: 'https://www.nicolasrozas.com',
     siteName: 'Nicolás Rozas',
     images: [
       {
@@ -83,7 +83,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Nicolás Rozas',
-  url: 'https://nicolasrozas.com',
+  url: 'https://www.nicolasrozas.com',
   jobTitle: 'Fullstack Developer',
   email: 'rozasnicolas23@gmail.com',
   knowsAbout: ['React', 'Next.js', 'Node.js', 'React Native', 'TypeScript'],

@@ -286,6 +286,7 @@ export default function Hero() {
                   alt="Nicolás Rozas"
                   fill
                   priority
+                  sizes="(max-width: 768px) 260px, 320px"
                   style={{ objectFit: 'cover' }}
                 />
               </div>
