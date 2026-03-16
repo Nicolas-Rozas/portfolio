@@ -242,7 +242,7 @@ function ProjectCard({
           alt={project.title}
           fill
           style={{ objectFit: 'cover', objectPosition: project.imagePosition ?? 'center center' }}
-          sizes="(max-width: 768px) 100vw, 50vw"
+          sizes="(max-width: 768px) 100vw, 445px"
         />
       </div>
 
