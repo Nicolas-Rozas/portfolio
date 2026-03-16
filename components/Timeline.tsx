@@ -288,16 +288,18 @@ export default function Timeline() {
             {entries.map((entry, i) => {
               const isHovered = hoveredKey === `m-${i}`;
 
+              const isLastMobile = i === entries.length - 1;
               return (
                 <div key={`mobile-${entry.company}`} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
-                  {/* Dot column */}
+                  {/* Dot + line column */}
                   <div
                     style={{
                       display: 'flex',
                       flexDirection: 'column',
                       alignItems: 'center',
                       flexShrink: 0,
-                      width: 40,
+                      width: 24,
+                      alignSelf: 'stretch',
                     }}
                   >
                     <motion.div
@@ -311,14 +313,41 @@ export default function Timeline() {
                         delay: i * 0.08,
                       }}
                       style={{
-                        width: 16,
-                        height: 16,
+                        width: 14,
+                        height: 14,
                         borderRadius: '50%',
                         backgroundColor: entry.dotColor,
-                        boxShadow: `0 0 12px ${entry.dotColor}88`,
-                        marginTop: '1rem',
+                        boxShadow: `0 0 10px ${entry.dotColor}88`,
+                        marginTop: '1.1rem',
+                        flexShrink: 0,
+                        zIndex: 1,
                       }}
                     />
+                    {/* Vertical line to next entry */}
+                    {!isLastMobile && (
+                      <div
+                        style={{
+                          flex: 1,
+                          width: 2,
+                          marginTop: 4,
+                          position: 'relative',
+                          overflow: 'hidden',
+                          backgroundColor: '#1E293B',
+                        }}
+                      >
+                        <motion.div
+                          initial={{ height: '0%' }}
+                          whileInView={{ height: '100%' }}
+                          viewport={{ once: true, amount: 0 }}
+                          transition={{ duration: 0.55, delay: i * 0.1 + 0.1, ease: 'easeInOut' }}
+                          style={{
+                            position: 'absolute',
+                            top: 0, left: 0, right: 0,
+                            background: 'linear-gradient(to bottom, #2563EB, #8B5CF6)',
+                          }}
+                        />
+                      </div>
+                    )}
                   </div>
 
                   {/* Card */}

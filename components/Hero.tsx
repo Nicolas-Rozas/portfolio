@@ -164,13 +164,16 @@ export default function Hero() {
           {/* CTAs */}
           <motion.div
             variants={usedItemVariants}
+            className="hero-ctas"
             style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}
           >
             <a
               href="#proyectos"
+              className="hero-cta-btn"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
+                justifyContent: 'center',
                 gap: '0.4rem',
                 padding: '0.75rem 1.75rem',
                 borderRadius: '8px',
@@ -195,6 +198,7 @@ export default function Hero() {
             </a>
             <motion.a
               href="#contacto"
+              className="hero-cta-btn"
               animate={prefersReduced ? {} : {
                 boxShadow: [
                   '0 0 0px 0px rgba(37,99,235,0)',
@@ -206,6 +210,7 @@ export default function Hero() {
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
+                justifyContent: 'center',
                 padding: '0.75rem 1.75rem',
                 borderRadius: '8px',
                 background: 'transparent',
@@ -295,6 +300,14 @@ export default function Hero() {
             grid-template-columns: 1fr !important;
             text-align: center;
             justify-items: center;
+          }
+          .hero-ctas {
+            flex-direction: column !important;
+            width: 100%;
+          }
+          .hero-cta-btn {
+            width: 100% !important;
+            box-sizing: border-box;
           }
         }
       `}</style>
