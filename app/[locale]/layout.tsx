@@ -11,73 +11,85 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://www.nicolasrozas.com'),
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const canonicalUrl =
+    locale === 'en'
+      ? 'https://www.nicolasrozas.com/en'
+      : 'https://www.nicolasrozas.com';
 
-  title: {
-    default: 'Nicolás Rozas — Fullstack Developer',
-    template: '%s | Nicolás Rozas',
-  },
-  description:
-    'Nicolás Rozas, desarrollador Fullstack con más de 5 años de experiencia en React, Next.js, Node.js y React Native. Disponible para proyectos freelance.',
-  keywords: [
-    'Nicolas Rozas',
-    'Nicolás Rozas',
-    'Fullstack Developer',
-    'React',
-    'Next.js',
-    'Node.js',
-    'React Native',
-    'Argentina',
-    'Rosario',
-  ],
-  authors: [{ name: 'Nicolás Rozas', url: 'https://nicolasrozas.com' }],
-  creator: 'Nicolás Rozas',
+  return {
+    metadataBase: new URL('https://www.nicolasrozas.com'),
 
-  alternates: {
-    canonical: '/',
-    languages: {
-      es: 'https://www.nicolasrozas.com',
-      en: 'https://www.nicolasrozas.com/en',
+    title: {
+      default: 'Nicolás Rozas — Fullstack Developer',
+      template: '%s | Nicolás Rozas',
     },
-  },
-
-  openGraph: {
-    title: 'Nicolás Rozas — Fullstack Developer',
     description:
-      'Desarrollador Fullstack con más de 5 años de experiencia. React, Next.js, Node.js, React Native.',
-    url: 'https://www.nicolasrozas.com',
-    siteName: 'Nicolás Rozas',
-    images: [
-      {
-        url: '/hero.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Nicolás Rozas - Fullstack Developer',
-      },
+      'Nicolás Rozas, desarrollador Fullstack con más de 5 años de experiencia en React, Next.js, Node.js y React Native. Disponible para proyectos freelance.',
+    keywords: [
+      'Nicolas Rozas',
+      'Nicolás Rozas',
+      'Fullstack Developer',
+      'React',
+      'Next.js',
+      'Node.js',
+      'React Native',
+      'Argentina',
+      'Rosario',
     ],
-    locale: 'es_AR',
-    type: 'website',
-  },
+    authors: [{ name: 'Nicolás Rozas', url: 'https://www.nicolasrozas.com' }],
+    creator: 'Nicolás Rozas',
 
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Nicolás Rozas — Fullstack Developer',
-    description:
-      'Desarrollador Fullstack con más de 5 años de experiencia. React, Next.js, Node.js, React Native.',
-    images: ['/hero.jpg'],
-  },
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        es: 'https://www.nicolasrozas.com',
+        en: 'https://www.nicolasrozas.com/en',
+      },
+    },
 
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
-  },
+    openGraph: {
+      title: 'Nicolás Rozas — Fullstack Developer',
+      description:
+        'Desarrollador Fullstack con más de 5 años de experiencia. React, Next.js, Node.js, React Native.',
+      url: canonicalUrl,
+      siteName: 'Nicolás Rozas',
+      images: [
+        {
+          url: '/hero.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'Nicolás Rozas - Fullstack Developer',
+        },
+      ],
+      locale: locale === 'en' ? 'en_US' : 'es_AR',
+      type: 'website',
+    },
 
-  verification: {
-    google: 'iY2hG8bursR018kz1pVuc5c1fsfpydftHRNLJMZp0GE',
-  },
-};
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Nicolás Rozas — Fullstack Developer',
+      description:
+        'Desarrollador Fullstack con más de 5 años de experiencia. React, Next.js, Node.js, React Native.',
+      images: ['/hero.jpg'],
+    },
+
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
+    },
+
+    verification: {
+      google: 'iY2hG8bursR018kz1pVuc5c1fsfpydftHRNLJMZp0GE',
+    },
+  };
+}
 
 const jsonLd = {
   '@context': 'https://schema.org',
