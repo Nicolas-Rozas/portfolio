@@ -148,7 +148,7 @@ export default function Timeline() {
                     style={{
                       textAlign: 'right',
                       paddingTop: '1.75rem',
-                      color: '#64748B',
+                      color: '#94A3B8',
                       fontSize: '0.875rem',
                       fontWeight: 500,
                       letterSpacing: '0.02em',
@@ -378,7 +378,7 @@ export default function Timeline() {
                     {/* Period (inside card on mobile) */}
                     <p
                       style={{
-                        color: '#64748B',
+                        color: '#94A3B8',
                         fontSize: '0.8rem',
                         fontWeight: 500,
                         marginBottom: '0.4rem',
