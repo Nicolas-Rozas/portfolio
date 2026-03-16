@@ -165,7 +165,7 @@ interface SideProject {
 const sideProjects: SideProject[] = [
   {
     id: 'autos',
-    title: 'Autos Records',
+    title: 'FleetBoard',
     category: 'Personal · Gestión',
     categoryColor: '#06B6D4',
     shortDesc: 'Dashboard para gestión de flota de 6 Ubers. Planillas de choferes, gastos, mecánica y rentabilidad por auto.',
@@ -174,7 +174,7 @@ const sideProjects: SideProject[] = [
   },
   {
     id: 'track',
-    title: 'Bills Tracker',
+    title: 'FinanceFlow',
     category: 'Personal · FinTech',
     categoryColor: '#10B981',
     shortDesc: 'App de finanzas personales. Ingresos, egresos, categorías, gráficos mensuales y soporte multi-moneda ARS/USD.',
