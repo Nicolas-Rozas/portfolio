@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "trayectoria": "Trayectoria",
+    "proyectos": "Proyectos",
+    "servicios": "Servicios",
+    "contacto": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Nicolás Rozas",
+    "subtitle": "Fullstack Developer · Argentina",
+    "available": "Disponible para proyectos freelance",
+    "about": "Desarrollo web, mobile y automatizaciones con más de 5 años de experiencia. Trabajé en productos usados por millones de personas en empresas de Argentina, UK y Estados Unidos.",
+    "cta_projects": "Ver mi trabajo",
+    "cta_contact": "Contactame"
+  },
+  "stats": {
+    "years": "años de experiencia",
+    "projects": "proyectos entregados",
+    "companies": "empresas",
+    "countries": "países"
+  },
+  "timeline": {
+    "title": "Mi recorrido",
+    "subtitle": "Más de 5 años construyendo productos digitales",
+    "present": "Presente",
+    "entries": [
+      {
+        "company": "Freelance",
+        "period": "2023 — Presente",
+        "role": "Fullstack Developer — Freelance",
+        "description": "Desarrollo de websites y web-apps a medida. E-commerce (Question Colors), AI-bots, chatbots WhatsApp, sistemas de automatización con n8n y GPT.",
+        "tags": ["Next.js", "GPT", "n8n", "WhatsApp API"]
+      },
+      {
+        "company": "PSH",
+        "period": "Jul 2024 — Presente",
+        "role": "Fullstack Developer — PSH",
+        "description": "Software factory argentina con clientes internacionales. Fullstack en Angular, React, Gatsby y Strapi. Productos: Seesaw (portfolios educativos), Life Homecare (salud domiciliaria), Pathful (orientación vocacional K-16).",
+        "tags": ["Nearpod", "Seesaw", "Life Homecare", "Pathful"]
+      },
+      {
+        "company": "Oaks Valley",
+        "period": "2022 — Jul 2024",
+        "role": "Frontend Developer — Oaks Valley",
+        "description": "Startup FinTech. Wakeful: plataforma de inversiones LATAM en mercados EE.UU. con cuentas Interactive Brokers. Bitennial: app de crypto trading mobile.",
+        "tags": ["React Native", "Django", "APIs Financieras"]
+      },
+      {
+        "company": "Giant",
+        "period": "May 2021 — Mar 2022",
+        "role": "Fullstack Developer — Giant",
+        "description": "Software factory UK. E-commerce y plataformas para ONGs como Make-A-Wish. React, Node.js, integración de pagos y donantes.",
+        "tags": ["React", "Node.js", "Express"]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Trabajo real, productos en producción",
+    "view_project": "Ver proyecto",
+    "role_label": "Mi rol",
+    "tech_label": "Stack"
+  },
+  "services": {
+    "title": "Lo que puedo hacer por vos",
+    "subtitle": "Servicios de desarrollo y consultoría",
+    "items": [
+      {
+        "title": "Desarrollo Web",
+        "description": "SPAs, landing pages y e-commerce con React, Next.js o el stack que el proyecto necesite."
+      },
+      {
+        "title": "Apps Mobile",
+        "description": "Aplicaciones cross-platform para iOS y Android con React Native."
+      },
+      {
+        "title": "Backend & APIs",
+        "description": "Servidores robustos, APIs REST, microservicios y bases de datos con Node.js o Django."
+      },
+      {
+        "title": "Consultoría Tech",
+        "description": "Arquitectura de sistemas, code review y mentoring para equipos y proyectos."
+      }
+    ]
+  },
+  "techstack": {
+    "title": "Mi Stack",
+    "subtitle": "Tecnologías con las que trabajo día a día"
+  },
+  "contact": {
+    "title": "¿Tenés un proyecto en mente?",
+    "subtitle": "Escribime, charlamos.",
+    "name_label": "Nombre",
+    "email_label": "Email",
+    "message_label": "Mensaje",
+    "send_button": "Enviar mensaje",
+    "name_placeholder": "Tu nombre",
+    "email_placeholder": "tu@email.com",
+    "message_placeholder": "Contame sobre tu proyecto..."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados"
+  }
+}
