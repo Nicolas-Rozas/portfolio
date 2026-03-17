@@ -7,15 +7,6 @@ import { useTranslations, useLocale } from 'next-intl';
 const ENTRIES = {
   es: [
     {
-      company: 'Freelance',
-      period: '2023 — Presente',
-      role: 'Fullstack Developer — Freelance',
-      description:
-        'Desarrollo de websites y web-apps a medida. E-commerce (Question Colors), AI-bots, chatbots WhatsApp, sistemas de automatización con n8n y GPT.',
-      tags: ['Next.js', 'TypeScript', 'n8n', 'OpenAI API', 'WhatsApp API', 'Vercel'],
-      dotColor: '#8B5CF6',
-    },
-    {
       company: 'PSH',
       period: 'Jul 2024 — Presente',
       role: 'Fullstack Developer — PSH',
@@ -23,6 +14,15 @@ const ENTRIES = {
         'Software factory argentina con clientes internacionales. Fullstack en Angular, React, Gatsby y Strapi. Productos: Seesaw (portfolios educativos), Life Homecare (salud domiciliaria), Pathful (orientación vocacional K-16).',
       tags: ['Angular', 'React', 'Gatsby', 'Strapi', 'Python', 'Django'],
       dotColor: '#3B82F6',
+    },
+    {
+      company: 'Freelance',
+      period: '2023 — Presente',
+      role: 'Fullstack Developer — Freelance',
+      description:
+        'Desarrollo de websites y web-apps a medida. E-commerce (Question Colors), AI-bots, chatbots WhatsApp, sistemas de automatización con n8n y GPT.',
+      tags: ['Next.js', 'TypeScript', 'n8n', 'OpenAI API', 'WhatsApp API', 'Vercel'],
+      dotColor: '#8B5CF6',
     },
     {
       company: 'Oaks Valley',
@@ -45,15 +45,6 @@ const ENTRIES = {
   ],
   en: [
     {
-      company: 'Freelance',
-      period: '2023 — Present',
-      role: 'Fullstack Developer — Freelance',
-      description:
-        'Custom websites and web apps. E-commerce (Question Colors), AI bots, WhatsApp chatbots, automation with n8n and GPT.',
-      tags: ['Next.js', 'TypeScript', 'n8n', 'OpenAI API', 'WhatsApp API', 'Vercel'],
-      dotColor: '#8B5CF6',
-    },
-    {
       company: 'PSH',
       period: 'Jul 2024 — Present',
       role: 'Fullstack Developer — PSH',
@@ -61,6 +52,15 @@ const ENTRIES = {
         'Argentine software factory with international clients. Fullstack across Angular, React, Gatsby and Strapi. Products: Seesaw (K-12 portfolios), Life Homecare (home health), Pathful (K-16 career guidance).',
       tags: ['Angular', 'React', 'Gatsby', 'Strapi', 'Python', 'Django'],
       dotColor: '#3B82F6',
+    },
+    {
+      company: 'Freelance',
+      period: '2023 — Present',
+      role: 'Fullstack Developer — Freelance',
+      description:
+        'Custom websites and web apps. E-commerce (Question Colors), AI bots, WhatsApp chatbots, automation with n8n and GPT.',
+      tags: ['Next.js', 'TypeScript', 'n8n', 'OpenAI API', 'WhatsApp API', 'Vercel'],
+      dotColor: '#8B5CF6',
     },
     {
       company: 'Oaks Valley',
