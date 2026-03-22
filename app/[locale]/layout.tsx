@@ -19,11 +19,11 @@ export async function generateMetadata({
   const { locale } = await params;
   const canonicalUrl =
     locale === 'en'
-      ? 'https://www.nicolasrozas.com/en'
-      : 'https://www.nicolasrozas.com';
+      ? 'https://nicolasrozas.com/en'
+      : 'https://nicolasrozas.com';
 
   return {
-    metadataBase: new URL('https://www.nicolasrozas.com'),
+    metadataBase: new URL('https://nicolasrozas.com'),
 
     title: {
       default: 'Nicolás Rozas — Fullstack Developer',
@@ -42,14 +42,14 @@ export async function generateMetadata({
       'Argentina',
       'Rosario',
     ],
-    authors: [{ name: 'Nicolás Rozas', url: 'https://www.nicolasrozas.com' }],
+    authors: [{ name: 'Nicolás Rozas', url: 'https://nicolasrozas.com' }],
     creator: 'Nicolás Rozas',
 
     alternates: {
       canonical: canonicalUrl,
       languages: {
-        es: 'https://www.nicolasrozas.com',
-        en: 'https://www.nicolasrozas.com/en',
+        es: 'https://nicolasrozas.com',
+        en: 'https://nicolasrozas.com/en',
       },
     },
 
@@ -95,7 +95,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Nicolás Rozas',
-  url: 'https://www.nicolasrozas.com',
+  url: 'https://nicolasrozas.com',
   jobTitle: 'Fullstack Developer',
   email: 'rozasnicolas23@gmail.com',
   knowsAbout: ['React', 'Next.js', 'Node.js', 'React Native', 'TypeScript'],
